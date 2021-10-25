@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Roles Usuario</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vadministrador">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+    <h1>Roles de Usuario</h1>
+
+    <form action="/frminsertarroles" method="POST" class="form-register animated fadeInDown">
+        <h1>Formulario Roles</h1>
+        <input class="forprincipal" type="text" name="rolid" placeholder="Id Rol" autofocus>
+        <input class="forprincipal" type="text" name="idusu" placeholder="Id Usu" autofocus>
+        <button class="botons" type="submit">Registrar</button>
+        
+        
+    </form>
+  <br>
+  <br>
+    
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Id Rol</th>
+            <th>Id Usu</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.rolid%>" name="iddat" id="a1" class="a1"  ></td>
+        <td><input type="text" value="<%=datos.idusu%>" name="id" id="a2" class="a2" ></td>
+    
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/actdatvendedor.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Datos de Vendedor</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vvendedor">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+    <h1>Datos Personales</h1>
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+            <th>Actualizar</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+
+    <tr>
+        
+        <input type="hidden" value="<%=datos.iddat%>" name="iddat" id="idusu" class="idusu">
+        <td><input type="text" value="<%=datos.nom%>" name="nom" id="nom" class="nom"></td>
+        <td><input type="text" value="<%=datos.apellido%>" name="apellido" id="ape" class="ape"></td>
+        <td><input type="text" value="<%=datos.telefono%>" name="telefono" id="tel" class="tel"></td>
+        <td><input type="text" value="<%=datos.correo%>" name="correo" id="cor" class="cor"></td>
+        <td><input type="submit" value="Actualizar" id="btnact" class="btnact"></td>
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

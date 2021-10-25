@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VISTA ADMINISTRADOR </title>
+    <link rel="shortcut icon" href="img/iconop.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/vistaempleados.css">
+    <link href = "https: //fonts.googleapis.com/css2? family = Kaisei + Decol & display = swap "rel =" stylesheet ">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="usuarioscon">Usuarios</a></li>
+                <li><a href="datpersonalesusuarios">Datos Usuarios</a></li>
+                <li><a href="ventastotales">Ventas Totales</a></li>
+                <li><a href="usuariorol">Roles</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+    </header>
+
+    <section class="sectitulo">
+        <h1> Vista Administrador</h1>
+    </section>
+    <section class="tilnom">
+        <h3>Bienvenid@</h3>
+        <% datos.forEach(function (datos){ %>
+            
+      
+        <%=datos.nom%>
+        <%=datos.apellido%>
+        <%})%>
+    </section>
+    
+    
+</body>
+
+</html>

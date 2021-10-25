@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vehiculo</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/estiloregistro.css">
+    
+    
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vcomprador">Inicio</a></li>
+                
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+   <h1>VEHICULOS POR RANGO DE PRECIO</h1>
+    <table class="registros">
+      <thead>
+          <tr> 
+              
+              <th>Modelo</th>
+              <th>Marca</th>
+              <th>Color</th>
+              <th>Estado</th>
+              <th>Precio</th>
+              <th>Numero del Vendedor</th>        
+          </tr>
+      </thead>
+      <tbody>
+          <% datos.forEach(function (datos){ %>
+      <tr>
+          <form action="/datos2" method="POST" >
+            <input type="hidden" value="<%=datos.iddat%>" name="iddat" id="iddat" class="iddat" readonly>
+            <input type="hidden" value="<%=datos.idcat%>" name="catid" id="catid" class="catid">
+            <td><input type="text" value="<%=datos.modelo%>" name="vehmodelo" id="vehmodelo" class="jk1"></td>
+            <td><input type="text" value="<%=datos.marca%>" name="vehmarca" id="vehmarca" class="jk1" readonly></td>
+            <td><input type="text" value="<%=datos.color%>" name="color" id="color" class="jk1" readonly></td>
+            <td><input type="text" value="<%=datos.estado%>" name="vehestado" id="vehestado" class="jk1"></td>
+            <td><input type="text" value="<%=datos.precio%>" name="vehprecio" id="vehprecio" class="jk1"></td>
+  
+            
+            <td><input type="submit" value="Numero del Vendedor" class="jk2"></td>
+
+          </form>
+         
+
+      </tr>
+      <%})%>
+  </tbody>
+  </table>
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'open sans';
+  background-image: url(/img/portada.jpg);
+  background-size: cover;
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Kaisei Decol', serif;
+}
+
+.header2 {
+  width: 100%;
+  height: 80px;
+  background-color: #161515;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  font-family: 'Kaisei Decol', serif;
+}
+
+.menu2 {
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  text-align:right;
+  padding: 25px 50px 0 0;
+}
+a{
+  color:#fff;
+  text-decoration: none;
+
+}
+li{
+  display: inline;
+  margin-right: 5px;
+  
+}
+nav{
+  text-align: right;
+  padding: 10px 50px 0 0;
+}
+
+.sectitulo{
+  
+  display: flex;
+  height: 90px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Kaisei Decol', serif;
+  
+ 
+}
+
+.sectitulo h1{
+  font-size: 40px;
+  color:rgb(0, 0, 0);
+  width: auto;
+  font-weight: 1000px;
+  
+}
+h3{
+  color: rgb(31, 179, 179);
+}
+.tilnom{
+  text-align: center;
+  font-size: 40px;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!--<script src="./js/actualizar.js"></script>
+  <script src="./js/eliminar.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Vehiculos</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vvendedor">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+    <h1>VEHICULOS</h1>
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Placa</th>
+            <th>Persona</th>
+            <th>Id Categoria</th>
+            <th>Modelo</th>
+            <th>Marca</th>
+            <th>Estado</th>
+            <th>Precio</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.placa%>" name="Placa" id="doc" class="doc" readonly ></td>
+        <td><input type="text" value="<%=datos.iddat%>" name="Presona" id="usu" class="usu" readonly></td>
+        <td><input type="text" value="<%=datos.idcat%>" name="categoria" id="cla" class="cla" readonly></td>
+        <td><input type="text" value="<%=datos.modelo%>" name="modelo" id="rol" class="rol" readonly></td>
+        <td><input type="text" value="<%=datos.marca%>" name="marca" id="est" class="est" readonly></td>
+        <td><input type="text" value="<%=datos.estado%>" name="estado" id="img" class="est" readonly></td>
+        <td><input type="text" value="<%=datos.precio%>" name="precio" id="img" class="est" readonly></td>
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

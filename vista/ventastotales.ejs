@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Ventas Totales</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vvendedor">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+  <H1>VENTAS TOTALES</H1>
+    
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Id Venta</th>
+            <th>Placa</th>
+            <th>Id Vendedor</th>
+            <th>Categoria</th>
+            <th>Color</th>
+            <th>Estado</th>
+            <th>Precio</th>
+            <th>Comprador</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.idventa%>" name="Idventa" id="doc" class="doc" ></td>
+        <td><input type="text" value="<%=datos.vplaca%>" name="Placa" id="usu" class="usu"></td>
+        <td><input type="text" value="<%=datos.vidvendedor%>" name="Id Vendedor" id="cla" class="cla"></td>
+        <td><input type="text" value="<%=datos.vidcategoria%>" name="Categoria" id="rol" class="rol"></td>
+        <td><input type="text" value="<%=datos.vcolor%>" name="Color" id="est" class="est"></td>
+        <td><input type="text" value="<%=datos.vestado%>" name="Estado" id="est" class="est"></td>
+        <td><input type="text" value="<%=datos.vprecio%>" name="Precio" id="img" class="img"></td>
+        <td><input type="text" value="<%=datos.vidcomprador%>" name="Id Comprador" id="img" class="img"></td>
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

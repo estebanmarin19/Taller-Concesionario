@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/actdatusuarios.js"></script>
+  <script src="./js/elidatusuarios.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Datos de Usuario</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vadministrador">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+    <h1>DATOS USUARIOS</h1>
+
+    <form action="/frminsertarusu" method="POST" class="form-register animated fadeInDown">
+        <h1>Formulario Usuarios</h1>
+        <input class="forprincipal" type="text" name="iddat" placeholder="Id Dat" autofocus>
+        <input class="forprincipal" type="text" name="idusu" placeholder="Id Usu" autofocus>
+        <input class="forprincipal" type="text" name="nom" placeholder="Nombre" autofocus>
+        <input class="forprincipal" type="text" name="apellido" placeholder="Apellido" autofocus>
+        <input class="forprincipal" type="text" name="tipodoc" placeholder="Tipo Documento">
+        <input class="forprincipal" type="text" name="numdoc" placeholder="Num Documento">
+        <input class="forprincipal" type="text"name="telefono" placeholder="Telefono">
+        <input class="forprincipal" type="text"name="correo" placeholder="Correo">
+        <button class="botons" type="submit">Registrar</button>
+        
+        
+    </form>
+  <br>
+  <br>
+    
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Id Dat</th>
+            <th>Id Usu</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Tipo de documento</th>
+            <th>Documento</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.iddat%>" name="iddat" id="a1" class="a1"  ></td>
+        <td><input type="text" value="<%=datos.idusu%>" name="id" id="a2" class="a2" ></td>
+        <td><input type="text" value="<%=datos.nom%>" name="nombre" id="a3" class="a3" ></td>
+        <td><input type="text" value="<%=datos.apellido%>" name="a4" id="rol" class="a4" ></td>
+        <td><input type="text" value="<%=datos.tipodoc%>" name="a5" id="rol" class="a5" ></td>
+        <td><input type="text" value="<%=datos.numdoc%>" name="a6" id="rol" class="a6" ></td>
+        <td><input type="text" value="<%=datos.telefono%>" name="a7" id="rol" class="a7" ></td>
+        <td><input type="text" value="<%=datos.correo%>" name="a8" id="rol" class="a8" ></td>
+        <td><input type="submit" value="Actualizar" id="btnact" class="btnact"></td>
+        <td><input type="submit" value="Eliminar" id="btneli" class="btneli"></td>
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

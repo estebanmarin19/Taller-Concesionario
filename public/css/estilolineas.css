@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: -webkit-linear-gradient(left, rgb(73, 77, 78) ,rgb(137, 158, 160)); 
+
+  }
+  
+  .form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    
+    
+
+    
+  }
+  
+  .form-register h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+   
+    
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /*.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }*/
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 auto;
+ 
+    
+
+}
+th, td{
+    padding: 20px;
+    
+}
+thead{
+    background: #24303c;
+    border-bottom: solid 5px #0a0dc5;
+    color: white;
+}
+tr:nth-child(even){
+
+    background: #354453;
+}
+
+tr:hover td{
+    background-color: #0DA2D6;
+    color: white;
+}

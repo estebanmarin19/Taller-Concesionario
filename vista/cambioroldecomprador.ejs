@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Rol</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/estiloregistro.css">
+    
+    
+</head>
+<body>
+   <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vcomprador">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+    <h1>CAMBIO DE ROLES</h1>
+
+    <form action="/cambioderol" method="POST" class="form-register animated fadeInDown">
+        <h1>Formulario Roles</h1>
+        <input class="forprincipal" type="text" name="idusu" placeholder="Id Usuario" autofocus>
+        <input class="forprincipal" type="text" name="rolid" placeholder="Id Nuevo Rol" autofocus>
+        <button class="botons" type="submit">Cambiar</button>
+        
+        
+    </form>
+    <br>
+
+
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Id Usuario</th>
+            <th>Id Rol</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.idusu%>" name="iddat" id="a1" class="a1"  ></td>
+        <td><input type="text" value="<%=datos.rolid%>" name="id" id="a2" class="a2" ></td>
+        
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+  <br>
+  <br>
+  
+
+  </body>
+</html>

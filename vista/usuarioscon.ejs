@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/actusuarioscon.js"></script>
+  <script src="./js/eliusuarioscon.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Registro de Usuarios</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vadministrador">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+  
+    <form action="/frminsertarusuco" method="POST" class="form-register animated fadeInDown">
+        <h1>Formulario Registro Usuarios</h1>
+        <input class="forprincipal" type="text" name="idusu" placeholder="Id" autofocus>
+        <input class="forprincipal" type="text" name="nomusu" placeholder="Nombre Usuario" autofocus>
+        <input class="forprincipal" type="text" name="clave" placeholder="Clave" autofocus>
+        <button class="botons" type="submit">Registrar</button>
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        
+    </form>
+  <br>
+  <br>
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Id Usu</th>
+            <th>Nombre De Usuario</th>
+            <th>Clave</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.idusu%>" name="id" id="id" class="id" ></td>
+        <td><input type="text" value="<%=datos.nomusu%>" name="Nombre" id="nom" class="nom"></td>
+        <td><input type="text" value="<%=datos.clave%>" name="Clave" id="clave" class="clave"></td>
+        <td><input type="submit" value="Actualizar" id="btnact" class="btnact"></td>
+        <td><input type="submit" value="Eliminar" id="btneli" class="btneli"></td>
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>
